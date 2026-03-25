@@ -92,6 +92,11 @@ header {
 .aboutme, .hobby {
     max-width: 400px;
     margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hobby {
+    padding-top: 10px;
 }
 
 .aboutme p {
