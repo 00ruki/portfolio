@@ -22,6 +22,11 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    background-color: #eeeeee75;
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+}
 
 h3 {
     font-size: 2rem;
@@ -36,12 +41,6 @@ a {
 
 a:hover:not(h1 a) {
     color: #05a32a;
-}
-
-.container {
-    background-color: #eeeeee75;
-    backdrop-filter: blur(10px);
-    padding: 0 20px;
 }
 
 /* header */
