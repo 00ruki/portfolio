@@ -26,12 +26,12 @@ section {
 
 h3 {
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-bottom: 20px; */
     border-bottom: 1px solid #333;
-    padding-bottom: 8px;
-
+    padding: 2rem 2rem 0.8rem 2rem;
+    text-align: center;
 }
 
 a {
@@ -139,13 +139,19 @@ header {
     justify-content: center;
 }
 
-.contact a {
+.contact ul li {
     border: 1px solid #333;
     border-radius: 50px;
+    overflow: hidden;
+}
+
+.contact ul li a {
+    display: block;
+    height: 100%;
     padding: 5px 10px;
 }
 
-.contact a:hover {
+.contact ul li a:hover {
     background-color: #333;
 }
 
