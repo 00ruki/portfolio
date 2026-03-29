@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* global */
 *{
     font-family: sans-serif;
     margin: 0;
@@ -14,15 +15,13 @@ html {
     font-size: 16px;
 }
 
+/* body */
 body {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 100px;
-}
 
 h3 {
     font-size: 2rem;
@@ -61,8 +60,13 @@ header {
 .navi li a {
     color: #333;
 }
-/* main */
 
+/* main */
+section {
+    margin-bottom: 100px;
+}
+
+/* hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -77,10 +81,15 @@ header {
     font-size: 2.4rem;
 }
 
+/* about */
 .about-container h4 {
     text-align: center;
     font-size: 1.6rem;
     margin: 10px auto;
+}
+
+.about li {
+    padding-bottom: 1rem;
 }
 
 .aboutme, .hobby {
@@ -88,19 +97,21 @@ header {
     margin: 0 auto;
     padding: 0 30px;
 }
-
-.hobby {
-    padding-top: 10px;
-}
-
+/* aboutme */
 .aboutme p {
     text-align: justify;
     text-justify: inter-ideograph;
     margin-bottom: 2rem;
 }
 
-.about li {
-    padding-bottom: 1rem;
+.aboutme ul li .day {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+/* hobby */
+.hobby {
+    padding-top: 10px;
 }
 
 .hobby ul {
@@ -108,13 +119,9 @@ header {
     flex-wrap: wrap;
     gap: 2rem;
 }
+/* work */
 
-.day {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-right: 2rem;
-}
-
+/* skill */
 .skill ul {
     display: flex;
     justify-content: center;
@@ -128,7 +135,7 @@ header {
     border-radius: 30px;
     padding: 5px 10px;
 }
-
+/* contact */
 .contact ul {
     display: flex;
     justify-content: center;
