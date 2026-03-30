@@ -182,6 +182,10 @@ main section h3 {
     margin: 3rem auto;
 }
 
+.section_text span {
+    background: linear-gradient(transparent 50%, yellow);
+}
+
 .section_text ul {
     display: flex;
     justify-content: center;
