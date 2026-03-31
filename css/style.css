@@ -203,7 +203,6 @@ main section h3 {
 
 .section_text li {
     font-size: 1.3rem;
-    border: 1px solid #333;
     border-radius: 5px;
     padding: 1rem 1.5rem;
     transition: 0.3s;
