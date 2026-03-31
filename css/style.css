@@ -130,6 +130,10 @@ footer p a {
     color: #333;
 }
 
+.hero h2 {
+    padding-bottom: 10%;
+}
+
 .hero h2 span {
     font-size: 110%;
     color: #60a876;
