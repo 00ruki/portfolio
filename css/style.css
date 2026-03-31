@@ -22,8 +22,6 @@ body {
     background-image: linear-gradient(139deg, rgba(251, 213, 251), rgba(149, 233, 243));
 }
 
-
-
 /* header */
 header {
     padding: 1rem 2rem;
@@ -147,11 +145,14 @@ footer p a {
 /* section */
 main section {
     background-color: #f0f0f0;
-    padding-top: 10rem;
     padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main section:first-of-type {
+    padding-top: 10rem;
 }
 
 .section_title {
@@ -194,6 +195,13 @@ main section h3 {
     list-style-type: none;
 }
 
+.section_text li {
+    font-size: 1.3rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+}
 /* section メディアクエリ */
 @media (max-width: 780px) {
     main section {
@@ -201,5 +209,8 @@ main section h3 {
     }
     .section_text {
         width: 90%;
+    }
+    .section_text li {
+        flex-wrap: wrap;
     }
 }
