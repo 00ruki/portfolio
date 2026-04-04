@@ -196,22 +196,6 @@ main section h3 {
     gap: 1rem;
 }
 
-.section_text li {
-    font-size: 1.3rem;
-    border-radius: 5px;
-    padding: 1rem 1.5rem;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.section_text li:hover {
-    scale: 110%;
-}
-
-.section_text svg {
-    width: 50px;
-    height: 50px;
-}
 /* section レスポンシブ */
 @media (max-width: 780px) {
     main section {
@@ -229,4 +213,22 @@ main section h3 {
     .section_text li {
         flex-wrap: wrap;
     }
+}
+
+/* skill */
+.skill li {
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.skill li:hover {
+    scale: 110%;
+}
+
+.skill svg {
+    width: 50px;
+    height: 50px;
 }
