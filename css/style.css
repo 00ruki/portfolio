@@ -230,7 +230,12 @@ main section h3 {
     scale: 110%;
 }
 
-.skill svg {
+.skill_img {
+    width: 100%;
+    text-align: center;
+}
+
+.skill_img svg {
     width: 80px;
     height: 80px;
 }
