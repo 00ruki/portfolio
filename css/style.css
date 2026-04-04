@@ -194,12 +194,7 @@ main section h3 {
 }
 
 .section_text ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style-type: none;
-    flex-wrap: wrap;
-    gap: 1rem;
 }
 
 /* section レスポンシブ */
@@ -222,8 +217,16 @@ main section h3 {
 }
 
 /* skill */
+.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.2rem;
+}
+
 .skill li {
-    width: 280px;
+    width: 250px;
     height: 250px;
     font-size: 1.3rem;
     border-radius: 5px;
@@ -246,6 +249,21 @@ main section h3 {
     height: 80px;
 }
 
+/* skill レスポンシブ */
+@media (max-width: 780px) {
+    .skill {
+        justify-content: center;
+    }
+    .skill li {
+        width: 250px;
+        height: 230px;
+        font-size: 1rem;
+    }
+    .skill_img svg {
+        width: 60px;
+        height: 60px;
+    }
+}
 /* fadeIn */
 
 .fadeIn_up {
