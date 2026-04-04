@@ -245,3 +245,16 @@ main section h3 {
     width: 80px;
     height: 80px;
 }
+
+/* fadeIn */
+
+.fadeIn_up {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2s;
+}
+
+.fadeIn_up.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
