@@ -156,7 +156,7 @@ main section {
     align-items: center;
 }
 
-main section:first-of-type {
+main #about section:first-of-type {
     padding-top: 10rem;
 }
 
@@ -164,9 +164,10 @@ main section:first-of-type {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     font-size: 2rem;
     gap: 0.4rem;
+    width: 75%;
 }
 
 main section h3 {
@@ -179,14 +180,13 @@ main section h3 {
     width: 75%;
     margin-top: 3rem;
     padding-bottom: 7rem;
-    border-bottom: 1px solid #333;
 }
 
 .section_text p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 2rem;
-    margin: 3rem auto;
+    margin: 0 auto 3rem;
 }
 
 .section_text span {
