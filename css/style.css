@@ -264,15 +264,59 @@ main section h3 {
         height: 60px;
     }
 }
-/* fadeIn */
 
+/* fadeIn */
 .fadeIn_left {
     opacity: 0;
-    transform: translate(-50%, 0);
+    transform: translate(-10%, 0);
     transition: 2s;
 }
 
 .fadeIn_left.is-show {
     transform: translate(0, 0);
     opacity: 1;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact_mail {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+@media (hover: hover) {
+    .contact_mail:hover {
+        transform: scale(110%);
+        opacity: 0.6;
+    }
+}
+
+.contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.contact svg {
+    width: 50px;
+    height: auto;
+}
+
+.contact p {
+    margin: 0;
+    margin-left: 1rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
