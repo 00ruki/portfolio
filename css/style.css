@@ -266,13 +266,13 @@ main section h3 {
 }
 /* fadeIn */
 
-.fadeIn_up {
+.fadeIn_left {
     opacity: 0;
-    transform: translate(0, 50%);
+    transform: translate(-50%, 0);
     transition: 2s;
 }
 
-.fadeIn_up.is-show {
+.fadeIn_left.is-show {
     transform: translate(0, 0);
     opacity: 1;
 }
