@@ -131,7 +131,12 @@ footer p a {
 }
 
 .hero h2 {
+    font-size: 3.5rem;
     padding-bottom: 10%;
+}
+
+.hero h3 {
+    font-size: 3rem;
 }
 /* hero レスポンシブ */
 @media (max-width: 780px) {
