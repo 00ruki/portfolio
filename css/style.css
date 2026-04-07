@@ -324,12 +324,6 @@ main section h3 {
     transition: 0.3s;
 }
 
-@media (hover: hover) {
-    .contact_mail:hover {
-        transform: scale(105%);
-        opacity: 0.6;
-    }
-}
 
 .contact a {
     display: flex;
@@ -357,5 +351,11 @@ main section h3 {
 @media (max-width:780px) {
     .contact {
         justify-content: center;
+    }
+}
+@media (hover: hover) {
+    .contact_mail:hover {
+        transform: scale(105%);
+        opacity: 0.6;
     }
 }
