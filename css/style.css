@@ -130,6 +130,10 @@ footer p a {
     color: #333;
 }
 
+.hero_text {
+    text-align: center;
+}
+
 .hero h2 {
     font-size: 3.5rem;
     padding-bottom: 10%;
@@ -348,4 +352,10 @@ main section h3 {
     color: #333;
     font-size: 1.2rem;
     font-weight: bold;
+}
+/*contact レスポンシブ */
+@media (max-width:780px) {
+    .contact {
+        justify-content: center;
+    }
 }
