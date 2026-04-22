@@ -12,7 +12,12 @@
     <!-- header start -->
     <header>
         <h1><a href="#home">R.S</a></h1>
-        <ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#work">WORK</a></li>
             <li><a href="#contact">CONTACT</a></li>
@@ -159,6 +164,23 @@
                 }
             });
         });
+
+        $(function(){
+            $(".hamburger").on("click", function() {
+                $("body").toggleClass("no-scroll");
+                $(".hamburger").toggleClass("active");
+                $(".menu").toggleClass("open");
+            });
+        })
+        $(function(){
+            $(document).on("click", function(e) {
+                if (!$(e.target).closest(".menu, .hamburger").length) {
+                    $(".menu").removeClass("open");
+                    $(".hamburger").removeClass("active")
+                    $("body").removeClass("no-scroll");
+                }
+            })
+        })
     </script>
 </body>
 </html>
