@@ -160,6 +160,9 @@ header h1 a:hover {
         align-items: center;
         gap: 5rem;
     }
+    .menu.open {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 780px) {

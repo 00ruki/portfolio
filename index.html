@@ -154,15 +154,18 @@
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
     <script>
-        $(function(){
-            $(".inview").on("inview", function (event, isInView) {
-                if (isInView) {
-                    $(this).stop().addClass("is-show");
+        const targets = document.querySelectorAll('.inview');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-show');
                 }
             });
         });
+
+targets.forEach(target => observer.observe(target));
 
         $(function(){
             $(".hamburger").on("click", function() {
