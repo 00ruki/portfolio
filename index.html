@@ -173,16 +173,19 @@
                 $(".hamburger").toggleClass("active");
                 $(".menu").toggleClass("open");
             });
-        })
-        $(function(){
             $(document).on("click", function(e) {
                 if (!$(e.target).closest(".menu, .hamburger").length) {
                     $(".menu").removeClass("open");
-                    $(".hamburger").removeClass("active")
+                    $(".hamburger").removeClass("active");
                     $("body").removeClass("no-scroll");
                 }
-            })
-        })
+            });
+            $(".menu a").on("click", function() {
+                $(".menu").removeClass("open");
+                $(".hamburger").removeClass("active");
+                $("body").removeClass("no-scroll");
+            });
+        });
     </script>
 </body>
 </html>
