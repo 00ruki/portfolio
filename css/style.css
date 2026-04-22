@@ -80,7 +80,7 @@ header h1 a:hover {
     position: fixed;
     top: 10px;
     right: 25px;
-    z-index: 30;
+    z-index: 9999;
     cursor: pointer;
     display: none;
     width: 50px;
@@ -147,6 +147,7 @@ header h1 a:hover {
     }
     .menu {
         position: fixed;
+        z-index: 9998;
         top: 0;
         right: 0;
         width: 70%;
