@@ -158,6 +158,7 @@
         <a href="#home">トップへ戻る</a>
         <p>&copy;Ruki Saeki</p>
     </footer>
+    <button id="backToTop">▲</button>
     <script
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -194,6 +195,27 @@
                 $("body").removeClass("no-scroll");
             });
         });
+        const backToTop = document.getElementById("backToTop");
+
+        // どの高さで表示するか（例：300px）
+        const showHeight = 300;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > showHeight) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        // クリックでトップへ戻る
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
     </script>
 </body>
 </html>
